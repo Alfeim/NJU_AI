@@ -1,12 +1,12 @@
-#1.首先从ubuntu官方下载镜像     https://ubuntu.com/download/desktop(推荐18.04)
+# 1.首先从ubuntu官方下载镜像     https://ubuntu.com/download/desktop(推荐18.04)
 
-#2.制作U盘启动盘,推荐工具Rufus  https://rufus.ie/zh_CN.html
+# 2.制作U盘启动盘,推荐工具Rufus  https://rufus.ie/zh_CN.html
 
   制作方法:选择安装系统镜像，分区选择GPT，目标系统UEFI，之后点击开始，等待进度条走完，然后点击[关闭]，弹出U盘.
 
-#3.安装系统
+# 3.安装系统
 
-#4.安装Nidia显卡驱动
+# 4.安装Nidia显卡驱动
 
   首先安装好vim，打开/etc/modprobe.d/blacklist.conf，在末尾键入以下几行以禁用原本的一些显卡驱动
   blacklist vga16fb
@@ -26,7 +26,7 @@
   然后打开软件与更新,在附加驱动中选择适合的显卡驱动,点击更改,等待安装完成.
   完成后重启系统,此时发现系统分辨率已经正常,打开终端输入nvidia-settings弹出界面且输入nvidia-smi打印出显卡信息说明安装成功
 
-#5.安装cuda与cudnn
+# 5.安装cuda与cudnn
 
   此步骤可以按照tensorflow官网的流程进行(点击GPU支持,查看ubuntu18.04的安装方式,可以省略掉安装Nvidia驱动的步骤因为我们已经安装过了)
   需要注意的是,在最后一步sudo apt-get update 后,如果直接输入sudo apt-get install -y --no-install-recommends libnvinfer-dev=5.1.5-1+cuda10.0会出现
@@ -47,7 +47,7 @@
   随后可以打开 /usr/local/cuda-10.0/samples/1_Utilities/deviceQuery目录,在该目录下直接make会生成可执行文件,如果该文件可以正常运行说明cuda已经
   安装成功
 
-#6.安装anaconda
+# 6.安装anaconda
 
   直接去anaconda官方网站下载,用bash命令运行下载下来的安装文件即可
   安装成功后,为了给予其可创建虚拟环境的权限,需要键入以下命令
@@ -56,7 +56,7 @@
   
   然后利用就可以创建自己的虚拟环境了！
 
-#7.在虚拟环境中安装tensorflow
+# 7.在虚拟环境中安装tensorflow
 
   在创建虚拟环境前,记得先更新anconda的源,推荐使用清华源,直接键入以下命令
   conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
@@ -78,16 +78,16 @@
   安装成功后,按照官网给的方法验证即可！
 
 
-#ps.如果在import tensorflow as tf后出现了类似 FutureWarning: Passing (type, 1) 的信息,说明环境中numpy版本过高了,可以通过降级方式解决
+# ps.如果在import tensorflow as tf后出现了类似 FutureWarning: Passing (type, 1) 的信息,说明环境中numpy版本过高了,可以通过降级方式解决
   
   输入查看环境中numpy的版本号, 键入pip show numpy发现版本号过高(比如1.17)
   输入pip uninstall numpy以卸载当前的numpy
   输入pip install numpy==1.16.4安装低版本的numpy,问题解决
   
-#8.安装keras
+# 8.安装keras
   在虚拟环境中执行 pip install keras
   
-#9.安装pytorch
+# 9.安装pytorch
   新建一个虚拟环境,执行conda install pytorch torchvision -c pytorch
  
   
