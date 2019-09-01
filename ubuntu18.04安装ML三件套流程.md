@@ -1,5 +1,5 @@
 # 1.首先从ubuntu官方下载镜像     
-  https://ubuntu.com/download/desktop(推荐18.04)
+  https://ubuntu.com/download/desktop  (推荐18.04)
 
 # 2.制作U盘启动盘,推荐工具Rufus  
   https://rufus.ie/zh_CN.html
