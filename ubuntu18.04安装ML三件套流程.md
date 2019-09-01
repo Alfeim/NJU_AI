@@ -1,6 +1,8 @@
-# 1.首先从ubuntu官方下载镜像     https://ubuntu.com/download/desktop(推荐18.04)
+# 1.首先从ubuntu官方下载镜像     
+  https://ubuntu.com/download/desktop(推荐18.04)
 
-# 2.制作U盘启动盘,推荐工具Rufus  https://rufus.ie/zh_CN.html
+# 2.制作U盘启动盘,推荐工具Rufus  
+  https://rufus.ie/zh_CN.html
 
   制作方法:选择安装系统镜像，分区选择GPT，目标系统UEFI，之后点击开始，等待进度条走完，然后点击[关闭]，弹出U盘.
 
