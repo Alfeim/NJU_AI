@@ -12,8 +12,12 @@
 
 # 网络模型设计
 
+测试用例：Dog vs Cats, Flower Classifer
+
 方案1： AlexNet  (调参可能较困难)
 
-方案2： LeNet基础上改进(较为灵活、简单)，包括如flowers分类模型、Mnist手写分类模型
+方案2： LeNet基础上改进(较为灵活、简单)，包括如flowers分类模型、Mnist手写分类模型，测试效果尚可
 
-方案3： GoogleNet （理论性能最优 可以考虑后续优化 demo时期不建议）
+方案3： GoogleNet （理论性能最优 可以考虑后续优化 demo时期不建议，测试效果较好）
+
+方案4:  VGG19(尚未测试)
