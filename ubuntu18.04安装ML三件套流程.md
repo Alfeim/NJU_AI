@@ -45,7 +45,9 @@
   此步骤可以按照tensorflow官网的流程进行(点击GPU支持,查看ubuntu18.04的安装方式,可以省略掉安装Nvidia驱动的步骤因为我们已经安装过了)
   
   需要注意的是,在最后一步sudo apt-get update 后,如果直接输入sudo apt-get install -y --no-install-recommends libnvinfer-dev=5.1.5-1+cuda10.0会出现
-  依赖不满足的问题,解决方法是分两步,也就是
+  依赖不满足的问题,解决方法是分两步,也就是(本机是cuda10.0，根据自己机器配置可更改)
+  
+  tesorflow官网配置流程见 ： https://tensorflow.google.cn/install/gpu
   
   sudo apt-get install -y --no-install-recommends libnvinfer5=5.1.5-1+cuda10.0
   
