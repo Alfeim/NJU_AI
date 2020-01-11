@@ -21,3 +21,8 @@
 方案3： GoogleNet （理论性能最优 可以考虑后续优化 demo时期不建议，测试效果较好）
 
 方案4:  VGG19(尚未测试)
+
+
+# 更新资讯
+
+本项目已迁移至giteas的私有仓库中https://gitea.lvsoft.dynu.net:8443/lv/defection-detection/src/branch/master/source 登陆后查看
